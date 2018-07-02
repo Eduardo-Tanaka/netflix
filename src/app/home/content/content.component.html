@@ -1,0 +1,27 @@
+<div class="home-wrapper dark">
+	<app-wrap></app-wrap>
+
+	<div id="this-is-netflix" class="">
+		<div></div>
+		<div class="tin-nav">
+			<div class="tin-header">
+				<span class="tin-title">Saiba mais sobre a Netflix</span>
+				<span class="tin-small-title">Saiba mais</span>
+			</div>
+
+			<div class="tin-nav-list three-items">
+				<app-content-nav *ngFor="let content of navContents; let i = index"
+					[content]="content"
+					(click)="handleContentNavClick(i)"
+				></app-content-nav>
+			</div>
+		</div>
+
+		<div class="tin-module-wrapper">
+			<app-cancel-anytime [activeIndex]="activeIndex === 0"></app-cancel-anytime>
+			<app-device [activeIndex]="activeIndex === 1"></app-device>
+			<app-price [activeIndex]="activeIndex === 2"></app-price>
+		</div>
+	</div>
+	<span></span>
+</div>

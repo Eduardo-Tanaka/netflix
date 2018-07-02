@@ -1,0 +1,38 @@
+{
+  "Login": {
+    "Entrar": "Sign In",
+    "Email": "Email",
+    "Senha": "Password",
+    "Esqueci": "Forgot your email or password?",
+    "Lembrar": "Remember me",
+    "Facebook": "Login with Facebook",
+    "Novo": "New to Netflix?",
+    "Assine": "Sign up now.",
+    "Dúvidas": "Questions",
+    "Ligue": "Call"
+  },
+  "Footer": {
+    "Termos de uso": "Terms of use",
+    "GiftCardTerm": "Gift Card Terms",
+    "PrivacyTerm": "Privacy Statement"
+  },
+  "Erro": {
+    "Email": "Please enter a valid email.",
+    "Senha": "Your password must contain between 4 and 60 characters.",
+    "Tel": "Please enter a valid phone number."
+  },
+  "Help": {
+    "Title": "Forgot Email/Password",
+    "Msg": "How would you like to reset your password?",
+    "Radio1": "Email",
+    "Radio2": "Text Message (SMS)",
+    "Radio3": "Voice Call",
+    "Text1": "We will send you an email with instructions on how to reset your password.",
+    "Text2": "We will text you a verification code to reset your password. Text fees may apply.",
+    "Text3": "We will call you with a verification code to reset your password.",
+    "Button1": "Email Me",
+    "Button2": "Text Me",
+    "Button3": "Call Me",
+    "Link": "I don't remember my email or phone." 
+  }
+}

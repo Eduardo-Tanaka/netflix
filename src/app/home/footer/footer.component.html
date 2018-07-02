@@ -1,0 +1,104 @@
+<div class="site-footer-wrapper centered dark">
+	<div class="footer-divider"></div>
+	<div class="site-footer">
+		<p class="footer-top">{{ 'Footer.Dúvidas' | translate }}? {{ 'Footer.Ligue' | translate }}
+			<a class="footer-top-a" href="tel:0800-887-0201">0800-887-0201</a>
+		</p>
+		<ul class="footer-links structural">
+			<li class="footer-link-item" placeholder="footer_responsive_link_faq_item">
+				<a class="footer-link" href="https://help.netflix.com/support/412" placeholder="footer_responsive_link_faq">
+					<span id="">{{ 'Footer.Perguntas frequentes' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_help_item">
+				<a class="footer-link" href="https://help.netflix.com" placeholder="footer_responsive_link_help">
+					<span id="">{{ 'Footer.Centro de ajuda' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_account_item">
+				<a class="footer-link" href="/youraccount" placeholder="footer_responsive_link_account">
+					<span id="">{{ 'Footer.Conta' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_media_center_item">
+				<a class="footer-link" href="https://media.netflix.com/" placeholder="footer_responsive_link_media_center">
+					<span id="">{{ 'Footer.Imprensa' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_relations_item">
+				<a class="footer-link" href="http://ir.netflix.com/" placeholder="footer_responsive_link_relations">
+					<span id="">{{ 'Footer.Relações com investidores' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_jobs_item">
+				<a class="footer-link" href="https://jobs.netflix.com/jobs" placeholder="footer_responsive_link_jobs">
+					<span id="">{{ 'Footer.Carreiras' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_gift_item">
+				<a class="footer-link" href="/redeem" placeholder="footer_responsive_link_gift">
+					<span id="">{{ 'Footer.Cartão pré-pago' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_waysToWatch_item">
+				<a class="footer-link" href="/watch" placeholder="footer_responsive_link_waysToWatch">
+					<span id="">{{ 'Footer.Formas de assistir' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_terms_item">
+				<a class="footer-link" href="https://help.netflix.com/legal/termsofuse" placeholder="footer_responsive_link_terms">
+					<span id="">{{ 'Footer.Termos de uso' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_privacy_separate_link_item">
+				<a class="footer-link" href="https://help.netflix.com/legal/privacy" placeholder="footer_responsive_link_privacy_separate_link">
+					<span id="">{{ 'Footer.Privacidade' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_cookies_separate_link_item">
+				<a class="footer-link" href="https://help.netflix.com/legal/privacy#cookies" placeholder="footer_responsive_link_cookies_separate_link">
+					<span id="">{{ 'Footer.Preferências de cookies' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_corporate_information_item">
+				<a class="footer-link" href="https://help.netflix.com/pt/node/2101" placeholder="footer_responsive_link_corporate_information">
+					<span id="">{{ 'Footer.Informações corporativas' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_contact_us_item">
+				<a class="footer-link" href="https://help.netflix.com/contactus" placeholder="footer_responsive_link_contact_us">
+					<span id="">{{ 'Footer.Entre em contato' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_speed_test_item">
+				<a class="footer-link" href="https://fast.com" placeholder="footer_responsive_link_speed_test">
+					<span id="">{{ 'Footer.Teste de velocidade' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item" placeholder="footer_responsive_link_legal_notices_item">
+				<a class="footer-link" href="https://help.netflix.com/legal/notices" placeholder="footer_responsive_link_legal_notices">
+					<span id="">{{ 'Footer.Avisos legais' | translate }}</span>
+				</a>
+			</li>
+			<li class="footer-link-item originals-link" placeholder="footer_responsive_link_netflix_originals_item">
+				<a class="footer-link" href="/br/originals" placeholder="footer_responsive_link_netflix_originals">
+					<span id="">{{ 'Footer.Originais Netflix' | translate }}</span>
+				</a>
+			</li>
+		</ul>
+		<div class="lang-selection-container" id="lang-switcher">
+			<div class="ui-select-wrapper">
+				<label class="ui-label no-display">
+					<span class="ui-label-text"></span>
+				</label>
+				<div class="select-arrow medium prefix globe">
+					<select class="ui-select medium" tabindex="0" placeholder="lang-switcher" (change)="changeLanguage($event.target.value)">
+						<option [selected]="language === 'br'" value="br" data-language="pt" data-country="BR">Português</option>
+						<option [selected]="language === 'en'" value="en" data-language="en" data-country="BR">English</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<p class="footer-country">Netflix Brasil</p>
+	</div>
+</div>

@@ -1,0 +1,63 @@
+<div class="login-body">
+	<div>
+		<noscript>
+			<div class="ui-message-container ui-message-error">
+				<div class="ui-message-icon"></div>
+				<div class="ui-message-contents">Parece que o JavaScript está desativado. Ative o JavaScript para restaurar a funcionalidade completa da página.
+				</div>
+			</div>
+		</noscript>
+		<div class="login-content login-form">
+			<h1>{{ 'Login.Entrar' | translate }}</h1>
+			<form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+				<label class="login-input login-input-email ui-label ui-input-label" id="lbl-email" placeholder="email">
+					<span class="ui-label-text">{{ 'Login.Email' | translate }}</span>
+					<input class="ui-text-input" name="email" id="email" value="" tabindex="1" autocomplete="email" formControlName="email" [class.error]="!loginForm.get('email').valid && loginForm.get('email').touched">
+					<div *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched" class="input-message error">{{ 'Erro.Email' | translate }}</div>
+				</label>
+				<div class="hybrid-password-wrapper">
+					<label class="hybrid-password login-input login-input-password ui-label ui-input-label" id="lbl-password" placeholder="password">
+						<span class="ui-label-text">{{ 'Login.Senha' | translate }}</span>
+						<input type="password" class="ui-text-input" name="password" id="password" tabindex="2" formControlName="password" [class.error]="!loginForm.get('password').valid && loginForm.get('password').touched">
+						<div *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched" class="input-message error">{{ 'Erro.Senha' | translate }}</div>
+					</label>
+					<span>Digite qualquer email e senha para entrar.</span>
+				</div>
+				<div class="login-forgot-password-wrapper">
+					<a [routerLink]="'/login/login-help'" class="login-help-link" tabindex="3">
+						{{ 'Login.Esqueci' | translate }}
+					</a>
+				</div>
+				<button class="btn login-button btn-submit btn-small" type="submit" autocomplete="off" tabindex="4">
+					{{ 'Login.Entrar' | translate }}
+				</button>
+				<div class="login-remember-me-wrapper">
+					<div class="ui-binary-input login-remember-me">
+						<input type="checkbox" class="" name="rememberMe" id="bxid_rememberMe_true" value="true" tabindex="5" checked="">
+						<label for="bxid_rememberMe_true">
+							<span class="login-remember-me-label-text">{{ 'Login.Lembrar' | translate }}</span>
+						</label>
+						<div class="helper"></div>
+					</div>
+				</div>
+			</form>
+			<form class="login-form" action="" method="post">
+				<div class="facebookForm regOption">
+					<div class="fb-minimal">
+						<hr>
+						<button class="btn minimal-login btn-submit btn-small" type="submit" autocomplete="off" tabindex="6">
+							<div class="fb-login">
+								<img class="icon-facebook" src="assets/FB-f-Logo__blue_57.png">
+								<span class="fbBtnText">{{ 'Login.Facebook' | translate }}</span>
+							</div>
+						</button>
+					</div>
+				</div>
+			</form>
+			<div class="login-signup-now">
+				{{ 'Login.Novo' | translate }}
+				<a class=" " target="_self" [routerLink]="'/'">{{ 'Login.Assine' | translate }}</a>
+			</div>
+		</div>
+	</div>
+</div>

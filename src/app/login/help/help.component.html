@@ -1,0 +1,77 @@
+<div class="login-body">
+	<div class="login-content">
+		<div>
+			<h1>{{ 'Help.Title' | translate }}</h1>
+			<p>{{ 'Help.Msg' | translate }}</p>
+			<div class="reset-choice-container">
+				<div class="ui-binary-input">
+					<input type="radio" class="reset-password-choice" name="resetPasswordChoice" id="bxid_resetPasswordChoice_email" value="email" tabindex="0" checked=""
+					(change)="changeSelectedHelp('email')">
+					<label for="bxid_resetPasswordChoice_email">{{ 'Help.Radio1' | translate }}</label>
+					<div class="helper"></div>
+				</div>
+				<div class="ui-binary-input">
+					<input type="radio" class="reset-password-choice" name="resetPasswordChoice" id="bxid_resetPasswordChoice_text" value="text" tabindex="1"
+					(change)="changeSelectedHelp('text')">
+					<label for="bxid_resetPasswordChoice_text">{{ 'Help.Radio2' | translate }}</label>
+					<div class="helper"></div>
+				</div>
+				<div class="ui-binary-input">
+					<input type="radio" class="reset-password-choice" name="resetPasswordChoice" id="bxid_resetPasswordChoice_call" value="call" tabindex="2"
+					(change)="changeSelectedHelp('call')">
+					<label for="bxid_resetPasswordChoice_call">{{ 'Help.Radio3' | translate }}</label>
+					<div class="helper"></div>
+				</div>
+			</div>
+			<form [formGroup]="helpForm" (ngSubmit)="submit()">
+				<div>
+					<p *ngIf="selectedHelp === 'email'">{{ 'Help.Text1' | translate }}</p>
+					<p *ngIf="selectedHelp === 'text'">{{ 'Help.Text2' | translate }}</p>
+					<p *ngIf="selectedHelp === 'call'">{{ 'Help.Text3' | translate }}</p>
+					<div class="contact-input-wrapper">
+						<div class="ui-select-wrapper country-select"
+							*ngIf="selectedHelp === 'text' || selectedHelp === 'call'">
+							<a class="ui-select-wrapper-link"
+							  (click)="openSelectCountry()">
+								<div class="ui-select-current">
+									<span class="country-select-flag nf-flag" ngClass="{{selectedCountryClass}}"></span>
+								</div>
+							</a>
+							<ul class="ui-select-options flag-select-item-list" [class.ui-select-options-hidden]="!showSelectCountry">
+								<li class="flag-select-option ui-select-item" style="list-style:none;margin-left:0;"
+									*ngFor="let country of countries" 
+									(click)="selectCountry(country)" 
+									[class.ui-select-item-highlighted]="country.className === selectedCountryClass"
+									[class.ui-select-item-selected]="country.className === selectedCountryClass">
+									<a id="{{country.id}}" tabindex="-1" class="ui-select-item-link clearfix">
+										<span class="country-select-flag nf-flag" ngClass="{{country.className}}"></span>
+										<span id="" class="country-name">
+											{{ country.countryName }} <em class="country-code"> +{{ country.countryCode }}</em>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<label class="contact-method-input ui-label ui-input-label" 
+							[class.phone-number-input]="selectedHelp === 'text' || selectedHelp === 'call'">
+							<span class="ui-label-text"></span>
+							<input type="email" class="ui-text-input" value="" placeholder="name@example.com" tabindex="3"
+								*ngIf="selectedHelp === 'email'" formControlName="email"
+								[class.error]="!helpForm.get('email').valid && helpForm.get('email').touched">
+							<div *ngIf="!helpForm.get('email').valid && helpForm.get('email').touched && selectedHelp === 'email'" class="input-message error">{{ 'Erro.Email' | translate }}</div>
+
+							<input type="tel" class="ui-text-input" value="" placeholder="" tabindex="3"
+								*ngIf="selectedHelp === 'text' || selectedHelp === 'call'" formControlName="tel"
+								[class.error]="!helpForm.get('tel').valid && helpForm.get('tel').touched">				
+							<div *ngIf="!helpForm.get('tel').valid && helpForm.get('tel').touched && selectedHelp !== 'email'" class="input-message error">{{ 'Erro.Tel' | translate }}</div>
+						</label>
+					</div>
+				</div>
+				<button class="btn forgot-password-action-button btn-blue btn-large" type="submit" autocomplete="off" tabindex="4" *ngIf="selectedHelp === 'email'">{{ 'Help.Button1' | translate }}</button>
+				<button class="btn forgot-password-action-button btn-blue btn-large" type="submit" autocomplete="off" tabindex="4"*ngIf="selectedHelp === 'text'">{{ 'Help.Button2' | translate }}</button>
+				<button class="btn forgot-password-action-button btn-blue btn-large" type="submit" autocomplete="off" tabindex="4" *ngIf="selectedHelp === 'call'">{{ 'Help.Button3' | translate }}</button>
+			</form>
+			<a [routerLink]="'/'" class="forgot-password-mop-link">{{ 'Help.Link' | translate }}</a>
+		</div>
+	</div>
+</div>

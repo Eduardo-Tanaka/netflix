@@ -1,0 +1,20 @@
+<div id="appMountPoint">
+	<div class="login-wrapper">
+		<div class="login-wrapper-background login-wrapper-default"></div>
+		<div class="nfHeader login-header signupBasicHeader">
+			<a [routerLink]="'/'" class="svg-nfLogo signupBasicHeader fix">
+				<svg class="svg-icon svg-icon-netflix-logo " focusable="true">
+					<use filter="" xlink:href="#netflix-logo"></use>
+				</svg>
+				<span class="screen-reader-text">Netflix</span>
+			</a>
+			<a [routerLink]="'/login'" class="authLinks signupBasicHeader" style="background-color: black;" onmouseenter="this.style.textDecoration='underline'" onmouseleave="this.style.textDecoration='none'">{{ 'Login.Entrar' | translate }}</a>
+		</div>
+
+		<div [@fadeAnimation]="out.isActivated ? out.activatedRoute : ''" class="fix-animation">
+		  <router-outlet #out="outlet"></router-outlet>
+		</div>
+		
+		<app-login-footer></app-login-footer>
+	</div>
+</div>

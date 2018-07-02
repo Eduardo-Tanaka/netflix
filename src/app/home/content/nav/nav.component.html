@@ -1,0 +1,18 @@
+<div class="tin-nav-cell" [class.active]="content.active">
+	<div class="tin-cell-container">
+		<div class="tin-icon tin-icon-svg">
+			<svg class="svg-icon" [ngClass]="[content.svgIcon]" focusable="true">
+				<use filter="" [attr.xlink:href]="content.xLink"></use>
+			</svg>
+		</div>
+		<div class="tin-small-icon tin-icon-svg" [ngClass]="[content.smallDivClass]">
+			<svg class="svg-icon" [ngClass]="[content.smallSvgIcon]" focusable="true">
+				<use filter="" [attr.xlink:href]="content.smallxLink"></use>
+			</svg>
+		</div>
+		<div class="tin-cell-text">
+			<span class="text-full" [innerHTML]="content.type | translate"></span>
+			<span class="text-short">{{ content.textShort | translate }}</span>
+		</div>
+	</div>
+</div>

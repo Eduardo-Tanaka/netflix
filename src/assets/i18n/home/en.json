@@ -1,0 +1,63 @@
+{
+	"Login": {
+    "Entrar": "Sign In"
+  },
+  "Footer": {
+  	"Dúvidas": "Questions",
+  	"Ligue": "Call",
+  	"Perguntas frequentes": "FAQ",
+  	"Centro de ajuda": "Help Center",
+	  "Conta": "Account",
+	  "Imprensa": "Media Center",
+	  "Relações com investidores": "Investor Relations",
+	  "Carreiras": "Jobs",
+	  "Cartão pré-pago": "Gift Cards",
+	  "Formas de assistir": "Ways to Watch",
+	  "Termos de uso": "Terms of Use",
+	  "Privacidade": "Privacy",
+	  "Preferências de cookies": "Cookie Preferences",
+	  "Informações corporativas": "Corporate Information",
+	  "Entre em contato": "Contact Us",
+	  "Teste de velocidade": "Speed Test",
+	  "Avisos legais": "Legal Notices",
+	  "Originais Netflix": "Netflix Originals",
+	  "GiftCardTerm": "Gift Card Terms",
+	  "PrivacyTerm": "Privacy Statement"
+  },
+  "Content": {
+  	"Nav1": "No commitments<br>Cancel online at anytime",
+  	"Nav1Short": "Cancel",
+    "Nav2": "Watch anywhere",
+    "Nav2Short": "Devices",
+    "Nav3": "Pick your price",
+    "Nav3Short": "Plans",
+  	"Pitch": "See what’s next.",
+  	"Assista": "WATCH ANYWHERE. CANCEL ANYTIME.",
+  	"Gratis": "JOIN FREE FOR A MONTH",
+  	"Cancel": "If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.",
+  	"DeviceHeader": "Watch TV shows and movies anytime, anywhere — personalized for you.",
+  	"DeviceHeadline": "Watch on your TV",
+  	"DeviceSubhead": "Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
+  	"DeviceHeadline2": "Watch instantly or download for later",
+  	"DeviceSubhead2": "Available on phone and tablet, wherever you go.",
+  	"DeviceHeadline3": "Use any computer",
+  	"DeviceSubhead3": "Watch right on Netflix.com."
+  },
+  "Pricing": {
+    "Plan": "Choose one plan and watch everything on Netflix.",
+    "Básico": "BASIC",
+    "Padrão": "STANDARD",
+    "Premium": "PREMIUM",
+    "Desconto": "Monthly price after free month ends on 7/29/18",
+    "Valor1": "19,90",
+    "Valor2": "27,90",
+    "Valor3": "37,90",
+    "HD": "HD available",
+    "UltraHD": "Ultra HD available",
+    "Telas": "Screens you can watch on at the same time",
+    "Devices": "Watch on your laptop, TV, phone and tablet",
+    "Filmes": "Unlimited movies and TV shows",
+    "Cancel": "Cancel anytime",
+    "Gratis": "First month free"
+  }
+}

@@ -1,0 +1,21 @@
+<div class="tin-module-selector tin-module-cancelAnytime" [class.tin-module-active]="activeIndex">
+	<div class="tin-module tin-large-showcase">
+		<div class="tin-large-cta">
+			<div class="tin-large-cta-text">
+				<span>{{ 'Content.Cancel' | translate }}</span>
+			</div>
+			<div class="cta-link-wrapper">
+				<form class="cta-form" action="/signup/planform" method="GET" id="formstartCancel">
+					<input type="hidden" name="action" value="startAction">
+					<input type="hidden" name="locale" value="pt-BR">
+					<button class="btn btn-large btn-red" type="submit" autocomplete="off" tabindex="0" role="link" placeholder="cta_link_cancelAnytime">
+						{{ 'Content.Gratis' | translate }}
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="tin-large-image">
+			<img class="tin-large-image-tag" src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_cancelanytime_withdevice.png">
+		</div>
+	</div>
+</div>

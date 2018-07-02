@@ -1,0 +1,63 @@
+{
+  "Login": {
+    "Entrar": "Entrar"
+  },
+  "Footer": {
+  	"Dúvidas": "Dúvidas",
+  	"Ligue": "Ligue",
+  	"Perguntas frequentes": "Perguntas frequentes",
+  	"Centro de ajuda": "Centro de ajuda",
+	  "Conta": "Conta",
+	  "Imprensa": "Imprensa",
+	  "Relações com investidores": "Relações com investidores",
+	  "Carreiras": "Carreiras",
+	  "Cartão pré-pago": "Cartão pré-pago",
+	  "Formas de assistir": "Formas de assistir",
+	  "Termos de uso": "Termos de uso",
+	  "Privacidade": "Privacidade",
+	  "Preferências de cookies": "Preferências de cookies",
+	  "Informações corporativas": "Informações corporativas",
+	  "Entre em contato": "Entre em contato",
+	  "Teste de velocidade": "Teste de velocidade",
+	  "Avisos legais": "Avisos legais",
+	  "Originais Netflix": "Originais Netflix",
+    "GiftCardTerm": "Termos dos Cartões pré-pagos",
+    "PrivacyTerm": "Declaração de privacidade"
+  },
+  "Content": {
+    "Nav1": "Sem compromisso<br>Cancele online quando quiser",
+    "Nav1Short": "Cancelar",
+    "Nav2": "Assista onde quiser, quanto quiser",
+    "Nav2Short": "Aparelhos",
+    "Nav3": "Escolha seu plano",
+    "Nav3Short": "Planos",
+  	"Pitch": "Sua próxima história, agora.",
+  	"Assista": "ASSISTA ONDE QUISER. CANCELE QUANDO QUISER.",
+  	"Gratis": "ASSISTA UM MÊS GRÁTIS",
+  	"Cancel": "Se você decidir não continuar a assinatura, tudo bem. Sem compromisso. Cancele online quando quiser.",
+  	"DeviceHeader": "Assista a séries e filmes quando quiser, onde quiser. Sugestões personalizadas para você.",
+  	"DeviceHeadline": "Assista na TV",
+  	"DeviceSubhead": "Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e mais.",
+  	"DeviceHeadline2": "Assista online ou baixe para assistir mais tarde",
+  	"DeviceSubhead2": "Disponível em smartphones e tablets onde quer que você vá.",
+  	"DeviceHeadline3": "Assista em qualquer computador",
+  	"DeviceSubhead3": "É só acessar a Netflix.com"
+  },
+  "Pricing": {
+    "Plan": "Escolha seu plano e assista a tudo na Netflix.",
+    "Básico": "BÁSICO",
+    "Padrão": "PADRÃO",
+    "Premium": "PREMIUM",
+    "Desconto": "Preço mensal após o mês grátis, que termina em 28/07/2018",
+    "Valor1": "19,90",
+    "Valor2": "27,90",
+    "Valor3": "37,90",
+    "HD": "HD disponível",
+    "UltraHD": "Ultra HD disponível",
+    "Telas": "Telas simultâneas",
+    "Devices": "Assista no notebook, TV, smartphone ou tablet",
+    "Filmes": "Filmes e séries ilimitados",
+    "Cancel": "Cancele quando quiser",
+    "Gratis": "Primeiro mês grátis"
+  }
+}

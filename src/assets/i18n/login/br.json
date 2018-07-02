@@ -1,0 +1,38 @@
+{
+  "Login": {
+    "Entrar": "Entrar",
+    "Email": "Email",
+    "Senha": "Senha",
+    "Esqueci": "Esqueceu seu email ou senha?",
+    "Lembrar": "Lembre-se de mim",
+    "Facebook": "Conectar com Facebook",
+    "Novo": "Novo por aqui?",
+    "Assine": "Assine agora",
+    "Dúvidas": "Dúvidas",
+    "Ligue": "Ligue"
+  },
+  "Footer": {
+	  "Termos de uso": "Termos de uso",
+    "GiftCardTerm": "Termos dos Cartões pré-pagos",
+    "PrivacyTerm": "Declaração de privacidade"
+  },
+  "Erro": {
+    "Email": "Informe um email válido.",
+    "Senha": "A senha deve ter entre 4 e 60 caracteres.",
+    "Tel": "Informe um número de telefone válido."
+  },
+  "Help": {
+    "Title": "Esqueci meu email / senha",
+    "Msg": "Como você prefere redefinir sua senha?",
+    "Radio1": "Email",
+    "Radio2": "Mensagem de Texto",
+    "Radio3": "Ligação de Voz",
+    "Text1": "Enviaremos um email com instruções de como redefinir sua senha.",
+    "Text2": "Enviaremos uma mensagem de texto com um código de redefinição da sua senha. A mensagem está sujeita a cobranças da sua operadora.",
+    "Text3": "Você receberá uma ligação que informará o código de redefinição de senha.",
+    "Button1": "Enviar por email",
+    "Button2": "Enviar por texto",
+    "Button3": "Ligar",
+    "Link": "Não me lembro do meu email ou telefone." 
+  }
+}
